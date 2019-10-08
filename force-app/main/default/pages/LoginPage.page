@@ -1,0 +1,20 @@
+<apex:page controller="LoginController">
+    <apex:form >
+        <apex:pageBlock>
+            <apex:pageBlockSection>
+                <apex:inputField value="{! account.TenDangNhap__c}"/>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection>
+                <apex:pageBlockSectionItem>
+                    <apex:outputLabel value="MatKhau" for="pass"/>
+                    <apex:inputSecret id="pass" value="{! account.MatKhau__c}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+
+            <apex:commandButton action="{! login}" value="Login"/>
+            <apex:commandButton action="{! signUp}" value="Sign up"/>
+
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

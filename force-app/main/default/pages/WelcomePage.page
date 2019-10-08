@@ -1,0 +1,9 @@
+<apex:page controller="LoginController" action="{! welcome}">
+    <apex:form>
+        <apex:pageBlock>
+                <apex:inputText value="{!account.TenDangNhap__c}"/>
+                <apex:inputText value="{!account.MatKhau__c}"/>    
+        </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>
